@@ -1,5 +1,6 @@
 ## Step: 1
 ### First we are going to initialized the memory in Replay Buffer class with a max size of 100000 say. Now, we are going to add transitions tuples to it and increment memory pointer 100000 time to fill it for model training to start. We are going to add new transition to 1st place again once all 100000 memory space is full.
+![Step 1](Images/Step 1.png)
 
 ## Step: 2
 ### Next we are going to Initialize Actor. There will be two actor as Actor Model and Actor Target. Actor Model is going to get train through backprop and Actor Target is going to get updated once in every two Actor Model update using polyak averaging. Actor Model is going to get updated using backprop once in every two Critic Model update. Initially we will copy all the weights of Actor Model to Actor Target.
